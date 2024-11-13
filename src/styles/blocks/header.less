@@ -1,0 +1,126 @@
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 8px 16px;
+    z-index: 100;
+    background-color: @background;
+    border-bottom: 1px solid #D5D8DD;
+
+    &--mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 56px;
+        display: none;
+        border-bottom: 1px solid #D5D8DD;
+        background-color: #FFFFFF;
+        z-index: 100;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__left-block {}
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+    }
+
+    &__logo-img {
+        height: 24px;
+        width: 174px;
+        text-decoration: none;
+    }
+
+    &__right-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-right: 16px;
+    }
+
+    &__search {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        width: 296px;
+    }
+
+
+    &_search-btn {
+        background-color: @background;
+        border: 0;
+    }
+
+    &__search-icon {}
+
+    &__user {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+
+    &__user-icon {
+        border-radius: 100%;
+
+        &--mobile {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+
+
+    &__user-name {
+        font-family: @font1;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2E3238;
+
+
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+        border: 1px solid #D5D8DD;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    &__btn-icon {
+        height: 20px;
+        width: 20px;
+        color: #2E3238;
+        pointer-events: none;
+    }
+}

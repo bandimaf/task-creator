@@ -1,0 +1,26 @@
+.pp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 16px 190px;
+    overflow-y: auto;
+    background: rgba(0,0,0, 0.4);
+    z-index: 110;
+
+    @media (max-width: 767px) {
+        box-sizing: content-box;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__container {
+        background-color: #FFFFFF;
+        padding: 16px;
+    }
+}

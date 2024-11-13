@@ -1,0 +1,61 @@
+.badge-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 3px 4px;
+    min-height: 32px;
+    // max-height: 32px;
+    max-height: none;
+
+
+
+}
+
+.badge {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    // display: inline-block;
+    // max-height: 24px;
+    padding: 2px 8px;
+    background-color: #E5F4FF;
+    border: 1px solid #99D5FF;
+    border-radius: 4px;
+
+
+    &__name {
+        font-family: @font1;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__delete-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        height: 16px;
+        width: 16px;
+    }
+
+    &__delete-btn--skip {
+        display: none;
+    }
+
+    &__delete-icon {
+        color: #2E3238;
+        width: 10px;
+        height: 10px;
+
+        &:active, :hover {
+            color: #99D5FF;
+        }
+    }
+}

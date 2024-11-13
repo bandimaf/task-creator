@@ -1,0 +1,238 @@
+<article class="pp" id="pp">
+    <div class="pp__container">
+        <section class="subtask__subheading subtask__subheading--pp">
+            <div class="subtask__subheading-right">
+                <h1 class="subtask__subtitle">Подзадача</h1>
+            </div>
+            <div class="subtask__subheading-left">
+                <button class="subtask__save btn btn--primary">Сохранить</button>
+                <button class="subtask__saveExit btn close-pp">Отменить</button>
+            </div>
+
+
+        </section>
+        <section class="subtask__form">
+            <h2 class="subtask__title title">Новая запись</h2>
+            <div class="subtask__one-column">
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name--required">Тема</span>
+                    <input type="text" class="input-form__input" placeholder="" required name="topic">
+                </label>
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Статус</span>
+                    <input type="text" class="input-form__input" placeholder="" name="status">
+                </label>
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Описание</span>
+                    <input type="text" class="input-form__input" placeholder="" name="description">
+                </label>
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Продукт</span>
+                    <input type="text" class="input-form__input" placeholder="" name="topic">
+                </label>
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name--required">Рабочие заметки</span>
+                    <input type="text" class="input-form__input" placeholder="" required name="working-notes">
+                </label>
+                <label class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Приоритет</span>
+                    <input type="text" class="input-form__input" placeholder="" name="priority">
+                </label>
+
+
+                <div class="input-form__wrapper">
+                    <span class="input-form__name input-form__name">Ответственный</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="responsible-person">
+                            @@include("badge.html",
+                            {
+                            "name": "Константин Константинопольский",
+                            "cross": "badge__delete-btn--skip"
+                            })
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Группы</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="groups">
+                            @@include("badge.html",
+                            {
+                            "name": "Support Group",
+                            "cross": "badge__delete-btn--skip"
+                            })
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <label class="input-form__wrapper">
+                    <span class="input-form__name input-form__name">Комментарии</span>
+                    <input type="text" class="input-form__input" placeholder="" required name="comments">
+                </label>
+                <div class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Группы</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="groups">
+
+                            @@loop("badge.html", [
+                            {
+                            "name": "Андрей Пивоваров",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Максим Галактионов",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Алла Лин",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Константин Константинопольский Константинович",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Игорь Иванченко",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Юлия Эйчаровна",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Артём Подпрыгайко-Саппортов",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Илья Вазнец",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Михаил Вортенов",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Наталья Нашевна",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Евгения Итамовна",
+                            "cross": "badge__delete-btn"
+                            },
+                            {
+                            "name": "Алиса Киральчук",
+                            "cross": "badge__delete-btn"
+                            },
+                            ])
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="input-form__wrapper">
+                    <span class="input-form__name input-form__name">Когда открыто</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="date-open">
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#date"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-form__wrapper">
+                    <span class="input-form__name input-form__name">Когда создано</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="date-create">
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#date"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Кем открыто</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="open-person">
+                            @@include("badge.html",
+                            {
+                            "name": "Андрей Пивоваров",
+                            "cross": "badge__delete-btn--skip"
+                            })
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="subtask__input input-form__wrapper">
+                    <span class="input-form__name input-form__name">Кем создано</span>
+                    <div class="subtask__input subtask__input-buttons">
+                        <div type="text" class="input-form__input badge-wrapper" name="create-person">
+                            @@include("badge.html",
+                            {
+                            "name": "Андрей Пивоваров",
+                            "cross": "badge__delete-btn--skip"
+                            })
+                        </div>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-icon" type="button" href="">
+                            <svg class="btn-icon__img">
+                                <use xlink:href="assets/icons/symbols.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+        </section>
+    </div>
+</article>

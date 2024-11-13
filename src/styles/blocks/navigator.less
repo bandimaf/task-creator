@@ -1,0 +1,121 @@
+.navigator {
+
+    &__tabs {
+        position: fixed;
+        top: 47px;
+        left: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // margin-top: 47px;
+        width: 56px;
+        border-right: 1px solid #D5D8DD;
+        height: 100vh;
+    }
+
+    &__tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        height: 56px;
+        width: 56px;
+        border: none;
+    }
+
+    &__tab-icon {
+        height: 24px;
+        width: 24px;
+        color: #2E3238;
+
+        &:active, &:hover {
+            color: #005999;
+        }
+    }
+
+    &__list-filter {
+        position: fixed;
+        top: 47px;
+        left: 56px;
+        width: 280px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // margin-top: 47px;
+        border-right: 1px solid #D5D8DD;
+        height: 100vh;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+    }
+
+    &__filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 16px;
+        border-bottom: 1px solid #D5D8DD;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 208px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: scroll;
+
+    }
+
+    &__list-item {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        height: 40px;
+        padding: 10px 16px;
+
+        text-decoration: none;
+
+
+
+        &:hover {
+            border-bottom: 1px solid #D5D8DD;
+
+            &:not(:first-child) {
+                border-top: 1px solid #D5D8DD;
+            }
+
+            
+        }
+    }
+
+    &__list-item-icon {
+        width: 16px;
+        height: 16px;
+        color: #ABB1BA;
+
+    }
+
+    &__list-item-name {
+        font-family: @font1;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2E3238;
+    }
+}
